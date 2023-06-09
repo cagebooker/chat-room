@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+練習用 ActionCable 製作簡易聊天室。
 
-Things you may want to cover:
+* 功能
+  - 進入網站，預設測試用user 
+  - 可建立聊天室/加入已有聊天室
+  - 類似 messager 介面的對話筐
+  - 即時連線聊天室（action cable/ activeJob / redis)
 
-* Ruby version
+* 使用 redis
 
-* System dependencies
+* 使用 ActiveJob 排程
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 可修改的地方
+  - 增加會員系統
+  - 用戶是否上線，顯示燈號
+  - 聊天室有新訊息時，有通知訊號

@@ -1,8 +1,10 @@
 import consumer from "./consumer"
 
-document.addEventListener('turbolinks:load', ()=>{
+document.addEventListener('DOMContentLoaded', ()=>{
   const room_element = document.getElementById("room-id");
   const room_id = Number(room_element.getAttribute('data-room-id'));
+  const messageBox = document.getElementById('messages');
+  messageBox.scrollTop = messageBox.scrollHeight;
   consumer.subscriptions.create({channel:"RoomChannel",room_id: room_id}, {
     connected() {
       // Called when the subscription is ready for use on the server
